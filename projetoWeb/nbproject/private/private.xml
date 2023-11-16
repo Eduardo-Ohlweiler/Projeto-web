@@ -3,7 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/web/listar-usuarios.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/web/editar-usuario.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/web/inserir-usuario.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/web/editar-usuario-controller.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/web/inserir-usuario-controller.jsp</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/web/index.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/src/java/model/Usuario.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/projetoWeb/src/java/service/UsuarioService.java</file>
         </group>
     </open-files>
 </project-private>

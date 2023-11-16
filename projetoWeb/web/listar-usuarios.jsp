@@ -53,32 +53,36 @@
                         <th scope="col">Nome</th>
                         <th scope="col">Email</th>
                         <th scope="col">Nivel</th>
-                         <th scope="col">Ações</th>
+                        <th scope="col">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
 
-                    <%  
+                    <%
                         List<Usuario> usuarios = null;
                         boolean primeiraBusca = false;
-                        primeiraBusca = request.getAttribute("usuarios")== null;
-                        
+                        primeiraBusca = request.getAttribute("usuarios") == null;
+
                         UsuarioService usuarioService = new UsuarioService();
-                        
-                        if(primeiraBusca){
-                        usuarios = usuarioService.listarUsuarios("");
-                        } else  {
-                        usuarios = (List<Usuario>) request.getAttribute("usuarios");
+
+                        if (primeiraBusca) {
+                            usuarios = usuarioService.listarUsuarios("");
+                        } else {
+                            usuarios = (List<Usuario>) request.getAttribute("usuarios");
                         }
-                        for (Usuario usuario : usuarios){
+                        for (Usuario usuario : usuarios) {
                     %>
                     <tr>
                         <td><%out.println(usuario.getId());%></th>
                         <td><%out.println(usuario.getNome());%></td>
                         <td><%out.println(usuario.getEmail());%></td>
                         <td><%out.println(usuario.getNivel());%></td>
-                        <td>
+                        <td class="d-flex">
                             <a href="editar-usuario.jsp?id=<% out.println(usuario.getId());%>">Editar</a>
+                            <form action ="excluir-usuario-controller.jsp" method = "post">
+                                <input name="idUsuario" hidden value ="<% out.println(usuario.getId());%>"/>   
+                                <button class="btn btn-primary btn-sm" type="submit" >Excluir</button>
+                            </form>
                         </td>
                     </tr>
                     <%}
